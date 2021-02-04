@@ -52,10 +52,10 @@ class OrderType extends AbstractType
                 ]
             ])
             ->add('time', TextType::class,[
-                'required' => false,
+                'required' => true,
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'Heure de retrait',
+                    'placeholder' => 'Telephone ou Emporter',
                     'class' => 'order-time'
                 ]
             ])
