@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un nouveau plat{% endblock %}
+
+{% block body %}
+    {{ path('dish_new') ? ('<body class="background-dish-img">') : '' }}
+    <h1 class="title-add-dish">AJOUTER UN PLAT</h1>
+    <div class="form-add-dish">
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+{{ form_end(form) }}
+        <div class="btn-create-dish">
+            <button class="btn btn-success" type="submit">
+            Créer
+        </button>
+        </div>
+    </div>
+
+{% endblock %}

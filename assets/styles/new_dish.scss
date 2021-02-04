@@ -1,0 +1,33 @@
+.background-dish-img{
+  background-image: url("https://i.postimg.cc/HshC20Kp/unnamed-jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title-add-dish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 2em;
+  font-family: "Lucida Console", monospace, sans-serif;
+}
+.form-add-dish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+.dish-name{
+  border: solid 2px;
+  border-color: black;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.btn-create-dish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+}

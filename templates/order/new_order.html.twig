@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Commander !{% endblock %}
+
+{% block body %}
+    {{ path('order_new') ? ('<body class="background-new-img">') : '' }}
+    <h1 class="title-add-order">JE COMMANDE</h1>
+    <div class="form-create-order">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <div class="btn-create-order">
+        <button class="btn btn-success" type="submit">
+            Valider
+        </button>
+    </div>
+    {{ form_end(form) }}
+</div>
+{% endblock %}
